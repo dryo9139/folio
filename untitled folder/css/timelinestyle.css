@@ -1,0 +1,232 @@
+html,
+body {
+  font: 100% "Schoolbell";
+  font-weight: lighter;
+  height: 100%;
+  background-color: #4D4545;
+}
+
+.blue-bg {
+  background-color: white;
+  height: 100%;
+  padding-top: 100px;
+}
+
+.circle {
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 50%;
+  background-color: #ED8D8D;
+  color: #4D4545;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row {
+  display: flex;
+}
+.how-it-works.row .col-2 {
+  display: inline-flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #ED8D8D;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid #ED8D8D;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid #ED8D8D;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
+
+
+/*Cards*/
+.card{border: none; background-color: transparent;}
+
+/*Navbar Rules*/
+
+img.nav-bar-img{
+	margin-right: 10px;
+}
+
+.navbar{
+background-color: white;
+border: 2px black solid;
+}
+
+.navbar-nav a:hover {
+    border-bottom: 2px solid black;
+}
+
+a.navbar-brand{
+	font-family:'Schoolbell';
+	font-size: 22px;
+}
+
+/*Floating Nav*/
+.floating-nav{
+	position: fixed;
+	margin-top: 100px;
+	border-left: 1px solid #727272;
+}
+
+	a.float-nav-link{
+		font-family: 'Schoolbell';
+		color: #595959;
+		font-size: 14px;
+		font-weight: 600;
+		text-align: left;
+	}
+
+/*Image Rules*/
+img{
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 0px solid #000000;
+}
+
+/*Font Override Rules*/
+h1, h2, h3, h4, h5, h6 {
+	font-family:'Schoolbell';
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+	h1.welcome-special{
+		color: black;
+		font-size: 90px;
+    text-align: center;
+}
+
+	h2.welcome-special-sub{
+		font-family: 'Schoolbell';
+		font-size: 30px;
+		text-align: justify;
+		text-align: center;
+	}
+
+	h3{
+		text-transform: uppercase;
+		color: #a49727;
+		letter-spacing: -0.5px;
+	}
+
+p, li, span, a {
+	font-family: 'Schoolbell';
+	text-align: justify;
+	font-weight: 300;
+}
+
+	p{
+		color: #494949;
+		line-height: 30px;
+		margin-bottom: 25px;
+	}
+
+span.img-caption{
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 10px 0px 10px 0px;
+}
+
+/*Container/class etc Override Rules*/
+.welcome-message{
+	margin-top: 200px;
+}
+
+.welcome-button-container{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.welcome-button{
+	background-color: transparent;
+	border-radius: 0px 0px 0px 0px;
+	border: 3px solid #000;
+	font-family:'Schoolbell';
+	font-size: 15px;
+	color: #000;
+	background-color: white;
+	text-transform: uppercase;
+}
+
+
+.welcome-button:hover{
+	background-color: #000000;
+	border-color: #000;
+}
+
+.master-heading{
+	padding-top: 100px;
+}
+
+.section-heading{
+	padding-top: 100px;
+}
+
+.slide-show{
+	padding: 30px 0px 50px 0px;
+}
+
+/*Footer*/
+.footer{
+	margin-top: 50px;
+	padding-top: 30px;
+	width: 100%;
+	min-height: 100px;
+	background-color: black;
+	border-top: 1px solid #727272;
+}
